@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Resida</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script defer src="contact.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div style="display: flex;">
+            <i class="fa fa-home icon"></i>
+            <h1>Resida</h1>
+        </div>
+        <div class="header-links">
+          <a href="index.html">Home</a>
+          <a href="#">Download App</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <div class="bg-grey">
+      <h1>Contact Us</h1>
+      <p>Any question or remarks? Just write us a message!</p>
+    </div>
+    <main>
+      <section class="contact-section">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p>Say something to start a live chat!</p>
+          <ul>
+            <li><i class="fas fa-phone-alt"></i> +1 012 3826 781</li>
+            <li><i class="fas fa-envelope"></i> demo@gmail.com</li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 132 Dartmouth Street Boston,
+              Massachusetts 02156 United States
+            </li>
+          </ul>
+          <div class="social-media">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="submit_form.php" method="POST">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label>Select Subject?</label>
+              <div class="subject-options">
+                <label
+                  ><input
+                    type="radio"
+                    name="subject"
+                    value="General Inquiry"
+                    checked
+                  />
+                  General Inquiry</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="subject"
+                    value="Payments and Fees"
+                  />
+                  Payments and Fees</label
+                >
+                <label
+                  ><input type="radio" name="subject" value="Technical" />
+                  Technical</label
+                >
+                <label
+                  ><input type="radio" name="subject" value="Registration" />
+                  Registration</label
+                >
+                <label
+                  ><input type="radio" name="subject" value="Other" />
+                  Other</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2>Resida</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam</p>
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-links">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Culture</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Server Status</a></li>
+              <li><a href="#">Report a Bug</a></li>
+              <li><a href="#">Chat Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">User Terms of Use</a></li>
+              <li><a href="#">Payments & Pricing Policy</a></li>
+              <li><a href="#">Cookies & Data Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2022 BRIX Templates. All Rights Reserved |
+          <a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a>
+        </p>
+        <p>
+          794 McAllister St San Francisco, 94102 | (414) 687 - 5892 |
+          <a href="mailto:contact@company.com">contact@company.com</a>
+        </p>
+      </div>
+
+      <script src="script.js"></script>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
